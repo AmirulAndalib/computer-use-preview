@@ -131,7 +131,9 @@ python main.py --query="Go to Google and type 'Hello World' into the search bar"
 
 You can choose the model to use by specifying the ```--model <model name>``` flag. Available options on Gemini Developer API and Vertex AI Client:
 
-- `gemini-3.5-flash`: This is the default model.
+- `gemini-3.6-flash`: This is the default model.
+- `gemini-3.5-flash-lite`: A low-latency, cost-efficient model with computer use support.
+- `gemini-3.5-flash`: An earlier Gemini 3.5 Flash model with computer use support.
 - `gemini-2.5-computer-use-preview-10-2025`: An earlier computer use preview model.
 - `gemini-3-flash-preview`: The preview version of Gemini 3 Flash.
 
@@ -147,7 +149,7 @@ The `main.py` script is the command-line interface (CLI) for running the browser
 | `--env` | The computer use environment to use. Must be one of the following: `playwright`, or `browserbase` | No | N/A | All |
 | `--initial_url` | The initial URL to load when the browser starts. | No | https://www.google.com | All |
 | `--highlight_mouse` | If specified, the agent will attempt to highlight the mouse cursor's position in the screenshots. This is useful for visual debugging. | No | False (not highlighted) | `playwright` |
-| `--model` | The model to use. See the "Available Models" section for more information. | No | `gemini-3.5-flash` | All |
+| `--model` | The model to use. See the "Available Models" section for more information. | No | `gemini-3.6-flash` | All |
 
 ### Environment Variables
 
